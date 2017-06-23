@@ -10,7 +10,10 @@ public class StringOperate {
 		System.out.println(s+""+x);
 		s+="hello=";
 		System.out.println(s+""+x+y+z);
+		String ss="haha";
+	
 		
 	}
+	
 
 }

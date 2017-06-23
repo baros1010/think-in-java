@@ -27,8 +27,11 @@ public class ExplicitStatic {
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
 		 System.out.println("Inside main()");
-		    Cups.cup1.f(99); 
+		   // Cups.cup1.f(99); 
 	}
-//	static Cups Cups1=new Cups();
-//	static Cups Cups2=new Cups();
+	static Cups Cups1=new Cups();
+	static Cups Cups2=new Cups();
+	static Cups Cups3=new Cups();
+	static Cups Cups4=new Cups();
+	static Cups Cups5=new Cups();
 }
