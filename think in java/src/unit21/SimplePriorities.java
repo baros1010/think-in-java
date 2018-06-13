@@ -16,7 +16,7 @@ public class SimplePriorities implements Runnable {
 	}
 	@Override
 	public void run() {
-		// TODO 自動生成されたメソッド・スタブ
+	
 		Thread.currentThread().setPriority(priority);
 		while(true){
 			for(int i=1;i<10000;i++)

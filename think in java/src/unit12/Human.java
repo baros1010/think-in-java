@@ -4,9 +4,10 @@ class Sneeze extends Annoyance{}
 public class Human {
 
 	public static void main(String[] args) {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ê‚½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		try{
 			throw new Sneeze();
+			
 		}catch(Sneeze e){
 			System.out.println("Sneeze");
 		}catch(Annoyance e){

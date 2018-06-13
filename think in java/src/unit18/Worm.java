@@ -65,16 +65,16 @@ public class Worm implements Serializable {
 
 	@SuppressWarnings("resource")
 	public static void main(String[] args) throws FileNotFoundException, IOException, ClassNotFoundException {
-		File f = new File("C:\\Worm.out");
+		File f = new File("C:\\Worm.txt");
 		if (!f.exists())
 			f.createNewFile();
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ê‚½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		Worm w = new Worm(6, 'a');
 		System.out.println("w=" + w);
-		ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("C:\\Worm.out"));
+		ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("C:\\Worm.txt"));
 		out.writeObject(w);
 		out.close();
-		ObjectInputStream in = new ObjectInputStream(new FileInputStream("C:\\Worm.out"));
+		ObjectInputStream in = new ObjectInputStream(new FileInputStream("C:\\Worm.txt"));
 		//String s = (String) in.readObject();
 		Worm w2 = (Worm) in.readObject();
 		System.out.println("w2" + w2);

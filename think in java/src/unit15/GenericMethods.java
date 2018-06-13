@@ -1,15 +1,15 @@
 package unit15;
 
 public class   GenericMethods{
-public <T> void f(T t){
-	System.out.println(t.getClass().getName());
+public <S,K,T> void f(S s,K k,T t){
+	System.out.println(s.getClass().getName()+k.getClass().getName()+t.getClass().getName());
 }
 	public static void main(String[] args) {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ê‚½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		GenericMethods gen=new GenericMethods();
-		gen.f("");
-		gen.f(1);
-		gen.f("1");
+		gen.f("",1,1.0);
+		gen.f(1,"1",' ');
+
 	}
 
 }

@@ -56,7 +56,6 @@ public class StormInning extends Inning implements Storm {
 	}
 
 	public static void main(String[] args) {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
 		try {
 			StormInning si = new StormInning();
 			si.atBat();
@@ -71,10 +70,10 @@ public class StormInning extends Inning implements Storm {
 			Inning i = new StormInning();
 			i.atBat();
 		} catch (RainedOut e) {
-			// TODO ©“®¶¬‚³‚ê‚½ catch ƒuƒƒbƒN
+			// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ê‚½ catch ï¿½uï¿½ï¿½ï¿½bï¿½N
 			System.out.println("RainedOut");
 		} catch (BaseballException e) {
-			// TODO ©“®¶¬‚³‚ê‚½ catch ƒuƒƒbƒN
+			// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ê‚½ catch ï¿½uï¿½ï¿½ï¿½bï¿½N
 			System.out.println("BaseballException");
 		}
 	}

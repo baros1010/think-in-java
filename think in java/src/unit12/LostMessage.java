@@ -1,18 +1,18 @@
 package unit12;
 class VeryImportant extends Exception{
 	public String toString(){
-		return "haha";
+		return "VeryImportant";
 	}
 }
 class HoHmException extends Exception{
 	public String toString(){
-		return "nono";
+		return "HoHmException";
 	}
 	
 }
 class noException extends Exception{
 	public String toString(){
-		return "xixi";
+		return "noException";
 	}
 	
 }
@@ -27,14 +27,14 @@ public class LostMessage {
 		throw new noException();
 	}
 	public static void main(String[] args) {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ê‚½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		try{
 			LostMessage lm=new LostMessage();
 			try{
-				//lm.f();
+				lm.f(); 
 				try{
 					lm.f();
-					lm.g();
+					//lm.g();
 				}finally{
 					lm.h();
 				}

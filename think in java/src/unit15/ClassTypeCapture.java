@@ -11,7 +11,7 @@ public class ClassTypeCapture<T> {
 	}
 
 	public static void main(String[] args) {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ê‚½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		ClassTypeCapture<Building> ctt1=new ClassTypeCapture<Building>(Building.class);
 		System.out.println(ctt1.f(new Building()));
 		System.out.println(ctt1.f(new house()));

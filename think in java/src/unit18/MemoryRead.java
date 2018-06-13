@@ -1,18 +1,18 @@
 package unit18;
 
 import java.io.IOException;
-import java.io.InputStream;
+
 import java.io.StringReader;
 
 public class MemoryRead {
 
 	public static void main(String[] args) throws IOException {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ê‚½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		StringReader in=new StringReader(BufferedInputFile.read("C:\\practice\\think in java\\src\\unit18\\filenew.java"));
-	 	InputStream ins=StringReader.class.getClassLoader().getSystemResourceAsStream("3.txt");
+	 	
 		//System.out.println(StringReader.class.getClassLoader().getResource(""));
 		int c;
-		while((c=ins.read())!=-1)
+		while((c=in.read())!=-1)
 			System.out.print((char)c);
 		//System.out.println(StringReader.class.getClassLoader().getResource(""));
 	}

@@ -13,12 +13,12 @@ public class EvenCheck implements Runnable{
 	
 	@Override
 	public void run() {
-		// TODO 自動生成されたメソッド・スタブ
+		
 		while(!generator.isCanceled()){
 			int val=generator.next();
 			if(val%2!=0){
 				System.out.println(val+"not even");
-				generator.cancel();
+				
 			}
 		}
 	}

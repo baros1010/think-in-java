@@ -25,9 +25,9 @@ class Cups{
 public class ExplicitStatic {
 
 	public static void main(String[] args) {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ê‚½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		 System.out.println("Inside main()");
-		   // Cups.cup1.f(99); 
+		  Cups.cup1.f(99); 
 	}
 	static Cups Cups1=new Cups();
 	static Cups Cups2=new Cups();

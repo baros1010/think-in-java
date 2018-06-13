@@ -41,16 +41,16 @@ class Entrance implements Runnable {
 
 	@Override
 	public void run() {
-		// TODO 自動生成されたメソッド・スタブ
+		
 		while (!canceled) {
 			synchronized (this) {
-				number++;
+				++number;
 			}
 			System.out.println(this + "Total:" + count.increment());
 			try {
 				TimeUnit.SECONDS.sleep(100);
 			} catch (InterruptedException e) {
-				// TODO 自動生成された catch ブロック
+				
 				e.printStackTrace();
 			}
 		}
@@ -81,12 +81,12 @@ class Entrance implements Runnable {
 public class OrnamentGraden {
 public static void main(String[] args) throws InterruptedException{
 	ExecutorService exc=Executors.newCachedThreadPool();
-	for(int i=0 ;i<5;i++)
+	for(int i=0 ;i<50;i++)
 		exc.execute(new Entrance(i));
 	TimeUnit.SECONDS.sleep(3);
 	Entrance.cancel();
 	exc.shutdown();
-	if(exc.awaitTermination(260, TimeUnit.MILLISECONDS));
+	if(!exc.awaitTermination(250, TimeUnit.MILLISECONDS));
 	System.out.println("aa");
 	System.out.println("Total"+Entrance.getToalCount());
 	System.out.println("Sum of Entrance"+Entrance.sumEntrances());

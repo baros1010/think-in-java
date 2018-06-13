@@ -7,7 +7,6 @@ public Contents contents(){
 
 		@Override
 		public int value() {
-			// TODO 自動生成されたメソッド・スタブ
 			return i;
 		}
 	};

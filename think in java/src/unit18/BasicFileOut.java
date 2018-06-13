@@ -11,11 +11,11 @@ public class BasicFileOut {
 	static String file = "C:\\practice\\think in java\\src\\2121.txt";
 
 	public static void main(String[] args) {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ê‚½ï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½Eï¿½Xï¿½^ï¿½u
 		try(BufferedReader in = new BufferedReader(
 				new StringReader(BufferedInputFile.read("C:\\practice\\think in java\\src\\3.txt")));){
-		//PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(file,true)));
-		PrintWriter out = new PrintWriter(file);
+		PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(file,true)));
+		//PrintWriter out = new PrintWriter(file);
 		int linecount = 1;
 		String s;
 		while ((s = in.readLine()) != null)
